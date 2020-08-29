@@ -1,0 +1,111 @@
+syntax enable
+
+set background=dark
+"colorscheme palenight
+
+"let g:lightline = {'colorscheme':'palenight'}
+"let g:airline_theme = "palenight"
+
+filetype plugin on
+let g:OmniSharp_timeout=5
+let g:ale_linters = { 'cs': ['OmniSharp'] }
+let g:OmniSharp_highlight_types = 1
+
+let g:OmniSharp_server_use_mono = 1
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+
+set number
+set noswapfile
+set noshowmode
+set laststatus=2
+set ts=2
+set sts=2
+set sw=2
+set hls is
+
+nmap <F6> :NERDTreeToggle<Toggle><CR>
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+
+" Start autocompletion after 4 chars
+"let g:ycm_min_num_of_chars_for_completion = 4
+"let g:ycm_min_num_identifier_candidate_chars = 4
+"let g:ycm_enable_diagnostic_highlighting = 0
+" Don't show YCM's preview window [ I find it really annoying ]
+"set completeopt-=preview
+"let g:ycm_add_preview_to_completeopt = 0
+
+
+let g:ale_linters = { 'javascript': ['eslint']  }
+
+let g:OmniSharp_server_use_mono = 1
+
+if !has('gui_running')
+	  set t_Co=256
+  endif
+
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+"
+" " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+"
+" " Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+"
+" " Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"
+" " On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+"
+" " Using a non-master branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+"
+" " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+"
+" " Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+"
+" " Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"
+" " Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install','for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
+Plug 'mattn/emmet-vim'
+
+Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'alvan/vim-closetag'
+
+Plug 'itchyny/lightline.vim'
+
+Plug 'airblade/vim-gitgutter'
+
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'leafOfTree/vim-vue-plugin'
+
+Plug 'w0rp/ale'
+" " Plug 'drewtempelmeyer/palenight.vim'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'rust-lang/rust.vim'
+"Plug 'Valloric/YouCompleteMe'
+" " Initialize plugin system
+call plug#end()
+

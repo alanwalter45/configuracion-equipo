@@ -1,4 +1,4 @@
-# configuracion de equipo
+# Configuración de equipo
 
 configuraciones del equipo
 
