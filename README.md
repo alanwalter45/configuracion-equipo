@@ -1,7 +1,4 @@
-# Configuración de equipo
+# Configuración
 
-configuraciones del equipo
+configuración para equipo.
 
-* Vim
-* Bash
-* Sources.list

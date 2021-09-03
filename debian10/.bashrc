@@ -129,6 +129,11 @@ fi
 # DEFAULT
 # export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] in \[\033[01;34m\]\w \[\033[33m\]\$(git_branch)\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\] " 
 
+#if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
+#    tmux attach -t default || tmux new -s default
+#    exec tmux
+#fi
+
 alias cls="clear"
 alias ll="ls -alh"
 alias open="xdg-open"
