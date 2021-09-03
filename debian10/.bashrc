@@ -80,7 +80,7 @@ if [ -x /usr/bin/dircolors ]; then
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
-    #alias grep='grep --color=auto'
+    alias grep='grep --color=auto'
     #alias fgrep='fgrep --color=auto'
     #alias egrep='egrep --color=auto'
 fi
@@ -92,10 +92,6 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
-
-
-export PATH=/home/alanwalter/.deno/bin:$PATH
-
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -117,10 +113,25 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#parse_git_branch() {
-#     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+#git_branch() {
+#     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 #}
-#export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+function _update_ps1(){
+	PS1=$(powerline-shell $?)
+}
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+	PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+# export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] in \[\033[01;34m\]\w \[\033[33m\]\$(git_branch)\[\033[00m\]\$ " 
+# DEFAULT
+# export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] in \[\033[01;34m\]\w \[\033[33m\]\$(git_branch)\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\] " 
+
+alias cls="clear"
+alias ll="ls -alh"
+alias open="xdg-open"
+alias rm="rm -I"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
