@@ -1,0 +1,112 @@
+{
+    "workbench.iconTheme": "vscode-simpler-icons",
+    "explorer.confirmDragAndDrop": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "django-html": "html",
+        "razor": "html",
+        "vue": "html"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.autofetch": true,
+    "editor.fontFamily": "Fira Code",
+    /* "editor.fontFamily": "JetBrains Mono", */
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": true,
+    "files.associations": {
+        "*.csproj": "msbuild",
+        "**/templates/**/*.html": "django-html",
+        "*.html": "html"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "JamesBirtles.svelte-vscode"
+    },
+    "[perl]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.fontSize": 20,
+    "debug.console.fontSize": 20,
+    "markdown.preview.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.suggestSelection": "first",
+    "terminal.integrated.cursorBlinking": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "docker-explorer.enableTelemetry": false,
+    "[json]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.suggest.insertMode": "replace",
+    "screencastMode.onlyKeyboardShortcuts": true,
+    "zenMode.hideLineNumbers": false,
+    "files.autoSave": "off",
+    "workbench.colorCustomizations": {},
+    "workbench.sideBar.location": "left",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "go.formatTool": "goimports",
+    "bracketPairColorizer.showHorizontalScopeLine": false,
+    "bracketPairColorizer.showVerticalScopeLine": false,
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "editor.renderLineHighlight": "gutter",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.showStartPage": false,
+    "window.menuBarVisibility": "toggle",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "thunder-client.codeSnippetLanguage": "js-axios",
+    "editor.renderIndentGuides": false,
+    "[objectpascal]": {
+        "editor.defaultFormatter": "alefragnani.pascal-formatter"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "editor.renderControlCharacters": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.colorTheme": "Bluex",
+    "editor.cursorStyle": "block",
+    "editor.rulers": [
+        79
+    ],
+    "editor.suggest.preview": true
+}
