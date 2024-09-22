@@ -1,0 +1,10 @@
+# stretch-oficiales
+deb http://ftp.us.debian.org/debian bookworm main contrib non-free non-free-firmware
+deb-src http://ftp.us.debian.org/debian bookworm main contrib non-free non-free-firmware
+# stretch-actualizaciones-seguridad
+deb http://deb.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+
+deb http://ftp.us.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+deb-src http://ftp.us.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+deb http://www.deb-multimedia.org bookworm main
