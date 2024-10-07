@@ -134,18 +134,11 @@ fi
 #    exec tmux
 #fi
 
-HISTSIZE=1000
-
 alias ll="ls -alh"
 alias rm="rm -I"
 alias vi="nvim"
-alias vim="nvim"
-alias tt="tree"
 alias tm="tmux"
-alias demos="cd /home/alanwalter/Desktop/demos"
-alias projects="cd /home/alanwalter/Desktop/projects"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source <(kubectl completion bash)
 source <(minikube completion bash)
 source <($HOME/go/bin/kind completion bash)
